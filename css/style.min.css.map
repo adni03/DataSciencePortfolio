@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/adityanittala/Documents/V3/portfolio",
+	"sourceRoot": "/Users/adityanittala/Documents/Website_v2/portfolio",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

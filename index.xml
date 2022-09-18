@@ -13,7 +13,7 @@
     <author>Aditya Nittala</author>
     <guid>https://adni03.github.io/DataSciencePortfolio/neural-style-transfer/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/circle_abstract.png" referrerpolicy="no-referrer">
+                <img src="/DataSciencePortfolio/nst.png" referrerpolicy="no-referrer">
             </div><p>Merging a content image and a style image to produce art!</p>]]></description>
 </item>
 <item>
@@ -33,7 +33,7 @@
     <author>Aditya Nittala</author>
     <guid>https://adni03.github.io/DataSciencePortfolio/facial-emotion-recognition/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/fer_1.png" referrerpolicy="no-referrer">
+                <img src="/DataSciencePortfolio/fer.webp" referrerpolicy="no-referrer">
             </div><p>Classifying images of human faces into one of seven basic emotions.</p>]]></description>
 </item>
 <item>

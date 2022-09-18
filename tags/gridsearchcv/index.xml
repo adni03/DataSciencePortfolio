@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GridSearchCV - Tag - Data Science Portfolio</title>
+        <link>https://adni03.github.io/DataSciencePortfolio/tags/gridsearchcv/</link>
+        <description>GridSearchCV - Tag - Data Science Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>nittala@cmu.edu (Aditya Nittala)</managingEditor>
+            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/DataSciencePortfolio/tags/gridsearchcv/" rel="self" type="application/rss+xml" /><item>
+    <title>Credit Card Risk Analyzer</title>
+    <link>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</link>
+    <pubDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</pubDate>
+    <author>Aditya Nittala</author>
+    <guid>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/DataSciencePortfolio/cc_app_m.jpg" referrerpolicy="no-referrer">
+            </div><p>Predicting the probability with which customers default on their bills.</p>]]></description>
+</item>
+</channel>
+</rss>
