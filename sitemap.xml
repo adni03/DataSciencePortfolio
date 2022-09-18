@@ -2,18 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/fake-news-classification/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/neural-style-transfer/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/covid19-detection-cnns/</loc><lastmod>2022-07-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/facial-emotion-recognition/</loc><lastmod>2021-02-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</loc><lastmod>2019-10-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/tictactoe-ai/</loc><lastmod>2019-09-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/mnist-emnist/</loc><lastmod>2019-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/categories/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/tags/lstms/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/categories/natural-language-processing/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/tags/nltk/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/posts/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/tags/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://adni03.github.io/DataSciencePortfolio/tags/tensorflow/</loc><lastmod>2022-09-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/categories/computer-vision/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://adni03.github.io/DataSciencePortfolio/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://adni03.github.io/DataSciencePortfolio/categories/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://adni03.github.io/DataSciencePortfolio/posts/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://adni03.github.io/DataSciencePortfolio/tags/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://adni03.github.io/DataSciencePortfolio/tags/tensorflow/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/tags/vgg-19/</loc><lastmod>2022-08-12T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/tags/covid-19/</loc><lastmod>2022-07-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://adni03.github.io/DataSciencePortfolio/tags/pytorch/</loc><lastmod>2022-07-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
