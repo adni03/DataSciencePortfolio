@@ -1,37 +1,37 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Machine Learning - Category - Data Science Portfolio</title>
-        <link>https://adni03.github.io/DataSciencePortfolio/categories/machine-learning/</link>
+        <link>https://adni03.github.io/Portfolio/categories/machine-learning/</link>
         <description>Machine Learning - Category - Data Science Portfolio</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>nittala@cmu.edu (Aditya Nittala)</managingEditor>
-            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/DataSciencePortfolio/categories/machine-learning/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/Portfolio/categories/machine-learning/" rel="self" type="application/rss+xml" /><item>
     <title>Credit Card Risk Analyzer</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</link>
+    <link>https://adni03.github.io/Portfolio/credit-card-risk-analyzer/</link>
     <pubDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</guid>
+    <guid>https://adni03.github.io/Portfolio/credit-card-risk-analyzer/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/cc_app_m.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/cc_app_m.jpg" referrerpolicy="no-referrer">
             </div><p>Predicting the probability with which customers default on their bills.</p>]]></description>
 </item>
 <item>
     <title>TicTacToe AI</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/tictactoe-ai/</link>
+    <link>https://adni03.github.io/Portfolio/tictactoe-ai/</link>
     <pubDate>Thu, 12 Sep 2019 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/tictactoe-ai/</guid>
+    <guid>https://adni03.github.io/Portfolio/tictactoe-ai/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/ttt.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/ttt.jpg" referrerpolicy="no-referrer">
             </div><p>Fun little AI bot that plays TicTacToe.</p>]]></description>
 </item>
 <item>
     <title>Handwritten Digits and Characters Classification</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/mnist-emnist/</link>
+    <link>https://adni03.github.io/Portfolio/mnist-emnist/</link>
     <pubDate>Thu, 01 Aug 2019 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/mnist-emnist/</guid>
+    <guid>https://adni03.github.io/Portfolio/mnist-emnist/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/e_mnist.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/e_mnist.jpg" referrerpolicy="no-referrer">
             </div><p>Building a handwritten digits and characters classifier from scratch.</p>]]></description>
 </item>
 </channel>

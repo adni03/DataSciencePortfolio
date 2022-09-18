@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>VGG-19 - Tag - Data Science Portfolio</title>
-        <link>https://adni03.github.io/DataSciencePortfolio/tags/vgg-19/</link>
+        <link>https://adni03.github.io/Portfolio/tags/vgg-19/</link>
         <description>VGG-19 - Tag - Data Science Portfolio</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>nittala@cmu.edu (Aditya Nittala)</managingEditor>
-            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/DataSciencePortfolio/tags/vgg-19/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/Portfolio/tags/vgg-19/" rel="self" type="application/rss+xml" /><item>
     <title>Neural Style Transfer</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/neural-style-transfer/</link>
+    <link>https://adni03.github.io/Portfolio/neural-style-transfer/</link>
     <pubDate>Fri, 12 Aug 2022 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/neural-style-transfer/</guid>
+    <guid>https://adni03.github.io/Portfolio/neural-style-transfer/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/nst.png" referrerpolicy="no-referrer">
+                <img src="/Portfolio/nst.png" referrerpolicy="no-referrer">
             </div><p>Merging a content image and a style image to produce art!</p>]]></description>
 </item>
 </channel>

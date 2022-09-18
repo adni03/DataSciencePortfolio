@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Natural Language Processing - Category - Data Science Portfolio</title>
-        <link>https://adni03.github.io/DataSciencePortfolio/categories/natural-language-processing/</link>
+        <link>https://adni03.github.io/Portfolio/categories/natural-language-processing/</link>
         <description>Natural Language Processing - Category - Data Science Portfolio</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>nittala@cmu.edu (Aditya Nittala)</managingEditor>
-            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/DataSciencePortfolio/categories/natural-language-processing/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://adni03.github.io/Portfolio/categories/natural-language-processing/" rel="self" type="application/rss+xml" /><item>
     <title>Fake News Classification using LSTMs</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/fake-news-classification/</link>
+    <link>https://adni03.github.io/Portfolio/fake-news-classification/</link>
     <pubDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/fake-news-classification/</guid>
+    <guid>https://adni03.github.io/Portfolio/fake-news-classification/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/fake.png" referrerpolicy="no-referrer">
+                <img src="/Portfolio/fake.png" referrerpolicy="no-referrer">
             </div><p>Classifying news articles as real or fake using Natural Language Processing techniques.</p>]]></description>
 </item>
 </channel>

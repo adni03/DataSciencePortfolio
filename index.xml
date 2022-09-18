@@ -1,79 +1,79 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Data Science Portfolio</title>
-        <link>https://adni03.github.io/DataSciencePortfolio/</link>
+        <link>https://adni03.github.io/Portfolio/</link>
         <description>Hugo theme - LoveIt</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>nittala@cmu.edu (Aditya Nittala)</managingEditor>
             <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
-            <atom:link href="https://adni03.github.io/DataSciencePortfolio/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://adni03.github.io/Portfolio/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Fake News Classification using LSTMs</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/fake-news-classification/</link>
+    <link>https://adni03.github.io/Portfolio/fake-news-classification/</link>
     <pubDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/fake-news-classification/</guid>
+    <guid>https://adni03.github.io/Portfolio/fake-news-classification/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/fake.png" referrerpolicy="no-referrer">
+                <img src="/Portfolio/fake.png" referrerpolicy="no-referrer">
             </div><p>Classifying news articles as real or fake using Natural Language Processing techniques.</p>]]></description>
 </item>
 <item>
     <title>Neural Style Transfer</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/neural-style-transfer/</link>
+    <link>https://adni03.github.io/Portfolio/neural-style-transfer/</link>
     <pubDate>Fri, 12 Aug 2022 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/neural-style-transfer/</guid>
+    <guid>https://adni03.github.io/Portfolio/neural-style-transfer/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/nst.png" referrerpolicy="no-referrer">
+                <img src="/Portfolio/nst.png" referrerpolicy="no-referrer">
             </div><p>Merging a content image and a style image to produce art!</p>]]></description>
 </item>
 <item>
     <title>COVID-19 Detection using CNNs</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/covid19-detection-cnns/</link>
+    <link>https://adni03.github.io/Portfolio/covid19-detection-cnns/</link>
     <pubDate>Mon, 04 Jul 2022 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/covid19-detection-cnns/</guid>
+    <guid>https://adni03.github.io/Portfolio/covid19-detection-cnns/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/xrays.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/xrays.jpg" referrerpolicy="no-referrer">
             </div><p>Detecting the presence of COVID-19 in a patient&rsquo;s lungs by analyzing chest X-Rays using CNNs.</p>]]></description>
 </item>
 <item>
     <title>Facial Emotion Recognition</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/facial-emotion-recognition/</link>
+    <link>https://adni03.github.io/Portfolio/facial-emotion-recognition/</link>
     <pubDate>Thu, 04 Feb 2021 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/facial-emotion-recognition/</guid>
+    <guid>https://adni03.github.io/Portfolio/facial-emotion-recognition/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/fer.webp" referrerpolicy="no-referrer">
+                <img src="/Portfolio/fer.webp" referrerpolicy="no-referrer">
             </div><p>Classifying images of human faces into one of seven basic emotions.</p>]]></description>
 </item>
 <item>
     <title>Credit Card Risk Analyzer</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</link>
+    <link>https://adni03.github.io/Portfolio/credit-card-risk-analyzer/</link>
     <pubDate>Tue, 01 Oct 2019 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/credit-card-risk-analyzer/</guid>
+    <guid>https://adni03.github.io/Portfolio/credit-card-risk-analyzer/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/cc_app_m.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/cc_app_m.jpg" referrerpolicy="no-referrer">
             </div><p>Predicting the probability with which customers default on their bills.</p>]]></description>
 </item>
 <item>
     <title>TicTacToe AI</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/tictactoe-ai/</link>
+    <link>https://adni03.github.io/Portfolio/tictactoe-ai/</link>
     <pubDate>Thu, 12 Sep 2019 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/tictactoe-ai/</guid>
+    <guid>https://adni03.github.io/Portfolio/tictactoe-ai/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/ttt.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/ttt.jpg" referrerpolicy="no-referrer">
             </div><p>Fun little AI bot that plays TicTacToe.</p>]]></description>
 </item>
 <item>
     <title>Handwritten Digits and Characters Classification</title>
-    <link>https://adni03.github.io/DataSciencePortfolio/mnist-emnist/</link>
+    <link>https://adni03.github.io/Portfolio/mnist-emnist/</link>
     <pubDate>Thu, 01 Aug 2019 00:00:00 &#43;0000</pubDate>
     <author>Aditya Nittala</author>
-    <guid>https://adni03.github.io/DataSciencePortfolio/mnist-emnist/</guid>
+    <guid>https://adni03.github.io/Portfolio/mnist-emnist/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/DataSciencePortfolio/e_mnist.jpg" referrerpolicy="no-referrer">
+                <img src="/Portfolio/e_mnist.jpg" referrerpolicy="no-referrer">
             </div><p>Building a handwritten digits and characters classifier from scratch.</p>]]></description>
 </item>
 </channel>
