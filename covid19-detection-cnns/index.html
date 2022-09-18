@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>COVID-19 Detection using CNNs - Data Science Portfolio</title><meta name="Description" content="Hugo theme - LoveIt"><meta property="og:title" content="COVID-19 Detection using CNNs" />
+<meta property="og:description" content="Detecting the presence of COVID-19 in a patient&rsquo;s lungs by analyzing chest X-Rays using CNNs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/covid19-detection-cnns/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-04T00:00:00+00:00" /><meta property="og:site_name" content="LoveIt" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="COVID-19 Detection using CNNs"/>
+<meta name="twitter:description" content="Detecting the presence of COVID-19 in a patient&rsquo;s lungs by analyzing chest X-Rays using CNNs."/>
+<meta name="application-name" content="Aditya Nittala">
+<meta name="apple-mobile-web-app-title" content="Aditya Nittala"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="http://example.org/covid19-detection-cnns/" /><link rel="prev" href="http://example.org/facial-emotion-recognition/" /><link rel="next" href="http://example.org/neural-style-transfer/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "COVID-19 Detection using CNNs",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/covid19-detection-cnns\/"
+        },"image": ["http:\/\/example.org\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  613 ,
+        "url": "http:\/\/example.org\/covid19-detection-cnns\/","datePublished": "2022-07-04T00:00:00+00:00","dateModified": "2022-07-04T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "http:\/\/example.org\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Aditya Nittala"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Data Science Portfolio"><span class="header-title-pre"><i class='fa-solid fa-spinner fa-pulse' aria-hidden='true'></i></span> Aditya Nittala</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Projects </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/adni03" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Data Science Portfolio"><span class="header-title-pre"><i class='fa-solid fa-spinner fa-pulse' aria-hidden='true'></i></span> Aditya Nittala</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Projects</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/adni03" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">COVID-19 Detection using CNNs</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Aditya Nittala</a></span>&nbsp;<span class="post-category">included in <a href="/categories/computer-vision/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Computer Vision</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-07-04">2022-07-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;613 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/covid19-detection-cnns/xrays.jpg"
+        data-srcset="/covid19-detection-cnns/xrays.jpg, /covid19-detection-cnns/xrays.jpg 1.5x, /covid19-detection-cnns/xrays.jpg 2x"
+        data-sizes="auto"
+        alt="/covid19-detection-cnns/xrays.jpg"
+        title="/covid19-detection-cnns/xrays.jpg" width="1168" height="192" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-the-dataset">1. The Dataset</a></li>
+    <li><a href="#2-custom-dataset">2. Custom Dataset</a>
+      <ul>
+        <li><a href="#code">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-image-tranforms">3. Image Tranforms</a></li>
+    <li><a href="#4-the-model">4. The Model</a>
+      <ul>
+        <li><a href="#code-1">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-training-and-performance">5. Training and Performance</a>
+      <ul>
+        <li><a href="#code-2">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-results">6. Results</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Detecting the presence of COVID-19 in a patient&rsquo;s lungs by analyzing chest X-Rays using CNNs.</p>
+<p>COVID-19 is an infection that is caused by the SARS-Cov2 virus. There are multiple variants of this virus, as the world has come to know it, but one particularly dangerous one is the Delta variant, which is known to cause damage to the lungs of its host. This infection can be spotted via a chest X-RAY scan. This scan is the basis for this project. Using a Convolutional Neural Network, these scans are analyzed for signs of COVID-19 infection. The tricky bit is differentiating between scans of patients with viral pneumonia and COVID-19. The latter stages of the COVID infection is brought on by a pneumonia like infection in the lungs. This project was implemented in the PyTorch framework.</p>
+<h2 id="1-the-dataset">1. The Dataset</h2>
+<p>The COVID-19 Radiograpy Database is a collection of chest X-RAYS of patients with the following conditions:</p>
+<ul>
+<li>COVID-19 infection: 3616 images</li>
+<li>Normal lungs: 10,192 images</li>
+<li>Non-COVID lung infections: 6012 images</li>
+<li>Viral pneumonia infection: 1345 images This database was created by researchers from Qatar Univeristy and Univeristy of Dhaka in collaboration with medical professionals in their countries as well as Malaysia and Pakistan.</li>
+</ul>
+<h2 id="2-custom-dataset">2. Custom Dataset</h2>
+<p>I created a custom dataset class that is helpful while training and testing the model. This class inherits from <code>torch.utils.data.Dataset</code> and implements the <code>__getitem()__</code> method.</p>
+<h3 id="code">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="k">class</span> <span class="nc">ChestXRayDataset</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image_dirs</span><span class="p">,</span> <span class="n">transform</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># transform obj is used to do data augmentation</span>
+</span></span><span class="line"><span class="cl">            <span class="k">def</span> <span class="nf">get_images</span><span class="p">(</span><span class="n">class_name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">images</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">image_dirs</span><span class="p">[</span><span class="n">class_name</span><span class="p">])</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;png&#39;</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s1"> examples&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">images</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">images</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="s1">&#39;viral&#39;</span><span class="p">,</span> <span class="s1">&#39;covid&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">class_names</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_images</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">image_dirs</span> <span class="o">=</span> <span class="n">image_dirs</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">transform</span> <span class="o">=</span> <span class="n">transform</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">c</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">class_names</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">class_name</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">class_names</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">class_name</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">image_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="n">class_name</span><span class="p">][</span><span class="n">index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">image_dirs</span><span class="p">[</span><span class="n">class_name</span><span class="p">],</span> <span class="n">image_name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">image</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">class_names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">class_name</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="3-image-tranforms">3. Image Tranforms</h2>
+<p>A few preprocessing steps were added to the pipeline before the model could be trained. For the training images:</p>
+<ul>
+<li>Resizing: match input dimensions for pretrained ResNet18</li>
+<li>Augmentation: <code>RandomHorizontalFlip</code></li>
+<li>Normalization</li>
+</ul>
+<p>And for the test images:</p>
+<ul>
+<li>Resizing</li>
+<li>Normalization</li>
+</ul>
+<p>Normalization was done separately to avoid <code>Data Leakage</code>.</p>
+<h2 id="4-the-model">4. The Model</h2>
+<p>The Convolutional Neural Network used for this project is a relatively light-weight residual network, ResNet18. This model was chosen for ease of transfer learning. The model was pretrained on the ImageNet dataset, which consists of images from over 1000 classes.</p>
+<p><figure><a class="lightgallery" href="/covid19-detection-cnns/resnet18.png" title="/covid19-detection-cnns/resnet18.png" data-thumbnail="/covid19-detection-cnns/resnet18.png" data-sub-html="<h2>ResNet Model</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/covid19-detection-cnns/resnet18.png"
+            data-srcset="/covid19-detection-cnns/resnet18.png, /covid19-detection-cnns/resnet18.png 1.5x, /covid19-detection-cnns/resnet18.png 2x"
+            data-sizes="auto"
+            alt="/covid19-detection-cnns/resnet18.png" width="850" height="229" />
+    </a><figcaption class="image-caption">ResNet Model</figcaption>
+    </figure></p>
+<h3 id="code-1">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">      <span class="n">resnet18</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">resnet18</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5-training-and-performance">5. Training and Performance</h2>
+<p>The model was trained for a few epochs to fine-tune the weights to improve the prediction accuracy. The performance criteria was set to 95% accuracy and the model was able to do so in under 2 epochs. The training loop is highlighted below, for full code, please visit my GitHub repository for this project.</p>
+<h3 id="code-2">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">train_loss</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="n">resnet18</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1"># batch of images</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">train_step</span><span class="p">,</span> <span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dl_train</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="n">outputs</span> <span class="o">=</span> <span class="n">resnet18</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="n">train_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">train_step</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1"># perform validation calculations</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">resnet18</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="n">acc</span> <span class="o">&gt;</span> <span class="mf">0.95</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Performance condition satisfied&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">            <span class="n">train_loss</span> <span class="o">/=</span> <span class="p">(</span><span class="n">train_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Training loss: </span><span class="si">{</span><span class="n">train_loss</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="6-results">6. Results</h2>
+<p>With an accuracy of <code>95%</code>, this model can be used as a tool to detect COVID-19 in the lungs of patients. <code>It cannot, in any capacity, be a subsitute for a medical professional.</code></p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-07-04</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/covid19-detection-cnns/" data-title="COVID-19 Detection using CNNs"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/covid19-detection-cnns/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/covid19-detection-cnns/" data-title="COVID-19 Detection using CNNs"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/covid19-detection-cnns/" data-title="COVID-19 Detection using CNNs"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/covid19-detection-cnns/" data-title="COVID-19 Detection using CNNs" data-image="xrays.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/facial-emotion-recognition/" class="prev" rel="prev" title="Facial Emotion Recognition"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Facial Emotion Recognition</a>
+            <a href="/neural-style-transfer/" class="next" rel="next" title="Neural Style Transfer">Neural Style Transfer<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Aditya Nittala</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

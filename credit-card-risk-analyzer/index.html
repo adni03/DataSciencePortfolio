@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Credit Card Risk Analyzer - Data Science Portfolio</title><meta name="Description" content="Predicting the probability with which customers default on their bills."><meta property="og:title" content="Credit Card Risk Analyzer" />
+<meta property="og:description" content="Predicting the probability with which customers default on their bills." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/credit-card-risk-analyzer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-01T00:00:00+00:00" /><meta property="og:site_name" content="LoveIt" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Credit Card Risk Analyzer"/>
+<meta name="twitter:description" content="Predicting the probability with which customers default on their bills."/>
+<meta name="application-name" content="Aditya Nittala">
+<meta name="apple-mobile-web-app-title" content="Aditya Nittala"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="http://example.org/credit-card-risk-analyzer/" /><link rel="prev" href="http://example.org/tictactoe-ai/" /><link rel="next" href="http://example.org/facial-emotion-recognition/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Credit Card Risk Analyzer",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/credit-card-risk-analyzer\/"
+        },"image": ["http:\/\/example.org\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  474 ,
+        "url": "http:\/\/example.org\/credit-card-risk-analyzer\/","datePublished": "2019-10-01T00:00:00+00:00","dateModified": "2019-10-01T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "http:\/\/example.org\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Aditya Nittala"
+            },"description": "Predicting the probability with which customers default on their bills."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Data Science Portfolio"><span class="header-title-pre"><i class='fa-solid fa-spinner fa-pulse' aria-hidden='true'></i></span> Aditya Nittala</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Projects </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/adni03" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Data Science Portfolio"><span class="header-title-pre"><i class='fa-solid fa-spinner fa-pulse' aria-hidden='true'></i></span> Aditya Nittala</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Projects</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/adni03" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Credit Card Risk Analyzer</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Aditya Nittala</a></span>&nbsp;<span class="post-category">included in <a href="/categories/machine-learning/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Machine Learning</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2019-10-01">2019-10-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;474 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/credit-card-risk-analyzer/cc_app_m.jpg"
+        data-srcset="/credit-card-risk-analyzer/cc_app_m.jpg, /credit-card-risk-analyzer/cc_app_m.jpg 1.5x, /credit-card-risk-analyzer/cc_app_m.jpg 2x"
+        data-sizes="auto"
+        alt="/credit-card-risk-analyzer/cc_app_m.jpg"
+        title="Predicting the probability with which customers default on their bills." width="1420" height="708" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-exploratory-data-analysis">1. Exploratory Data Analysis</a></li>
+    <li><a href="#2-data-cleaning">2. Data Cleaning</a></li>
+    <li><a href="#3-data-pre-processing">3. Data Pre-Processing</a>
+      <ul>
+        <li><a href="#code">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-training-and-testing">4. Training and Testing</a>
+      <ul>
+        <li><a href="#code-1">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-hyperparameter-tuning">5. Hyperparameter Tuning</a>
+      <ul>
+        <li><a href="#code-2">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-results">6. Results</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Predicting the probability with which customers default on their bills.</p>
+<p>In this project, I leveraged the power of Logistic Regression to predict if a customer’s credit card application will be approved. Most banks have systems like this, albeit much more complex, to make a prediction on the application’s approval. The risk associated with lending credit is immense and hence, banks rely heavily on such systems to mitigate it.</p>
+<h2 id="1-exploratory-data-analysis">1. Exploratory Data Analysis</h2>
+<p>I looked through the dataset to understand the various kinds of features present and their data types and statistics. There were columsn with missing and non-numeric type data. For the logistic regression model to perform well, the dataset needed some cleaning and pre-processing.</p>
+<h2 id="2-data-cleaning">2. Data Cleaning</h2>
+<p>There were columns with ‘?’ in place of correct data. To address this, I replaced the missing values with ‘NaN’. Next, the ‘NaN’s had to be treated. There are various ways to deal with such values. I chose to impute these values with the mean of the column. Lastly, to fill in the missing values in the columns with non-numeric data types, I replaced it with the most frequent observation in the column for that predictor.</p>
+<h2 id="3-data-pre-processing">3. Data Pre-Processing</h2>
+<p>Firstly, the non-numeric data was encoded using LabelEncoding. Next, the data was scaled to bring it down to the [0-1] range. Normalizing the data improves model performance and it is computationally less expensive and since the data points are in the same range, each feature is weighted the same. Finally, the data was split into the training and testing dataset.</p>
+<h3 id="code">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+</span></span><span class="line"><span class="cl">    <span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rescaledX_train</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rescaledX_test</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="4-training-and-testing">4. Training and Testing</h2>
+<p>Since, this is a binary classification problem, I chose to use the Logistic Regression algorithm for the prediction. The accuracy of the vanilla logistic regression model (without any tuning) was 83.7%</p>
+<h3 id="code-1">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">logreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">rescaledX_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Accuracy of logistic regression classifier: &#34;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Accuracy</span> <span class="n">of</span> <span class="n">logistic</span> <span class="n">regression</span> <span class="n">classifier</span><span class="p">:</span>  <span class="mf">0.8377192982456141</span>
+</span></span><span class="line"><span class="cl">    <span class="n">array</span><span class="p">([[</span><span class="mi">93</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="mi">27</span><span class="p">,</span> <span class="mi">98</span><span class="p">]])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5-hyperparameter-tuning">5. Hyperparameter Tuning</h2>
+<p>To improve the accuracy of the model, I used GridSearchCV with cross-validation to find the optimum parameters for the model. Cross-validation works by splitting the data into k folds and fitting the data to the model. (k-1) sets are used for training and the last set is used for validation.</p>
+<h3 id="code-2">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">     <span class="n">grid_model</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">logreg</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rescaledX</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grid_model_result</span> <span class="o">=</span> <span class="n">grid_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">rescaledX</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Summarize results</span>
+</span></span><span class="line"><span class="cl">    <span class="n">best_score</span><span class="p">,</span> <span class="n">best_params</span> <span class="o">=</span> <span class="n">grid_model_result</span><span class="o">.</span><span class="n">best_score_</span><span class="p">,</span> <span class="n">grid_model_result</span><span class="o">.</span><span class="n">best_params_</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Best: </span><span class="si">%f</span><span class="s2"> using </span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">best_score</span><span class="p">,</span> <span class="n">best_params</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Best</span><span class="p">:</span> <span class="mf">0.863651</span> <span class="n">using</span> <span class="p">{</span><span class="s1">&#39;max_iter&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;tol&#39;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="6-results">6. Results</h2>
+<p>With an accuracy of 86.3%, this model can be used as a tool to identify customers who could default on their Credit Card bills.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2019-10-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/credit-card-risk-analyzer/" data-title="Credit Card Risk Analyzer"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/credit-card-risk-analyzer/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/credit-card-risk-analyzer/" data-title="Credit Card Risk Analyzer"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/credit-card-risk-analyzer/" data-title="Credit Card Risk Analyzer"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/credit-card-risk-analyzer/" data-title="Credit Card Risk Analyzer" data-image="cc_app_m.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/tictactoe-ai/" class="prev" rel="prev" title="TicTacToe AI"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>TicTacToe AI</a>
+            <a href="/facial-emotion-recognition/" class="next" rel="next" title="Facial Emotion Recognition">Facial Emotion Recognition<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Aditya Nittala</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
