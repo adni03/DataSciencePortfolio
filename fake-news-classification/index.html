@@ -15,7 +15,7 @@
 <meta name="twitter:title" content="Fake News Classification using LSTMs"/>
 <meta name="twitter:description" content="Classifying news articles as real or fake using Natural Language Processing techniques."/>
 <meta name="application-name" content="Aditya Nittala">
-<meta name="apple-mobile-web-app-title" content="Aditya Nittala"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="https://adni03.github.io/Portfolio/fake-news-classification/" /><link rel="prev" href="https://adni03.github.io/Portfolio/neural-style-transfer/" /><link rel="stylesheet" href="/Portfolio/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<meta name="apple-mobile-web-app-title" content="Aditya Nittala"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="https://adni03.github.io/Portfolio/fake-news-classification/" /><link rel="prev" href="https://adni03.github.io/Portfolio/neural-style-transfer/" /><link rel="next" href="https://adni03.github.io/Portfolio/h-1b-analysis/" /><link rel="stylesheet" href="/Portfolio/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -125,17 +125,17 @@
       </ul>
     </li>
     <li><a href="#4-preparing-data-by-tokenization-and-padding">4. Preparing data by tokenization and padding</a></li>
-    <li><a href="#4-building-the-model">4. Building the Model</a>
+    <li><a href="#5-building-the-model">5. Building the Model</a>
       <ul>
         <li><a href="#code">Code</a></li>
       </ul>
     </li>
-    <li><a href="#5-training-and-performance">5. Training and Performance</a>
+    <li><a href="#6-training-and-performance">6. Training and Performance</a>
       <ul>
         <li><a href="#code-1">Code</a></li>
       </ul>
     </li>
-    <li><a href="#6-results">6. Results</a></li>
+    <li><a href="#7-results">7. Results</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>Classifying news articles as real or fake using Natural Language Processing techniques.</p>
@@ -288,7 +288,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">padded_test</span> <span class="o">=</span> <span class="n">pad_sequences</span><span class="p">(</span><span class="n">test_sequences</span><span class="p">,</span><span class="n">maxlen</span> <span class="o">=</span> <span class="mi">4405</span><span class="p">,</span> <span class="n">truncating</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span><span class="p">)</span> 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="4-building-the-model">4. Building the Model</h2>
+</div><h2 id="5-building-the-model">5. Building the Model</h2>
 <p>Now for the fun part!
 The model I used for this task was a <code>Bidirectional LSTM</code> with 128 units. I had to use a bidirectional model because the length of these articles are quite long and so I wanted to capture long term dependencies from the <em>future</em> and the <em>past</em>. To train the model I used the <code>TensorFlow</code> framework. An <code>Embedding</code> layer was added before the BiLSTM layer to convert the sequences into Embeddings for the model to train on. Since this is a binary classification problem, the output layer has one unit with a <code>sigmoid</code> activation. The <code>adam</code> optimizer was used and the loss function was set to <code>binary_crossentropy</code>.</p>
 <h3 id="code">Code</h3>
@@ -328,7 +328,7 @@ The model I used for this task was a <code>Bidirectional LSTM</code> with 128 un
 </span></span><span class="line"><span class="cl">    <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="5-training-and-performance">5. Training and Performance</h2>
+</div><h2 id="6-training-and-performance">6. Training and Performance</h2>
 <p>The model was trained for 2 epochs with a validation split of 0.1 and a batch_size of 64. The trained model was then evaluated on the test set by obtaining the sigmoid outputs. If the value is greater than 0.5, classify as fake.</p>
 <h3 id="code-1">Code</h3>
 <div class="highlight"><div class="chroma">
@@ -373,7 +373,7 @@ The model I used for this task was a <code>Bidirectional LSTM</code> with 128 un
 </span></span><span class="line"><span class="cl">    <span class="n">Model</span> <span class="n">Accuracy</span> <span class="p">:</span>  <span class="mf">0.9968819599109131</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="6-results">6. Results</h2>
+</div><h2 id="7-results">7. Results</h2>
 <p>With a test accuracy of <code>99.6%</code>, this model does a great job at detecting if a news article is real or fake.</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -395,7 +395,8 @@ The model I used for this task was a <code>Bidirectional LSTM</code> with 128 un
         </section>
     </div>
 
-    <div class="post-nav"><a href="/Portfolio/neural-style-transfer/" class="prev" rel="prev" title="Neural Style Transfer"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Neural Style Transfer</a></div>
+    <div class="post-nav"><a href="/Portfolio/neural-style-transfer/" class="prev" rel="prev" title="Neural Style Transfer"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Neural Style Transfer</a>
+            <a href="/Portfolio/h-1b-analysis/" class="next" rel="next" title="H-1B Visa Analysis [R]">H-1B Visa Analysis [R]<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

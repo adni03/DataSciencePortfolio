@@ -4,9 +4,19 @@
         <link>https://adni03.github.io/Portfolio/</link>
         <description>Hugo theme - LoveIt</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>nittala@cmu.edu (Aditya Nittala)</managingEditor>
-            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>nittala@cmu.edu (Aditya Nittala)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://adni03.github.io/Portfolio/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>H-1B Visa Analysis [R]</title>
+    <link>https://adni03.github.io/Portfolio/h-1b-analysis/</link>
+    <pubDate>Mon, 12 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Aditya Nittala</author>
+    <guid>https://adni03.github.io/Portfolio/h-1b-analysis/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Portfolio/h1b-visa.jpg" referrerpolicy="no-referrer">
+            </div><p>Analysis of President Trump&rsquo;s memos on the H-1B applications in the year 2017.</p>]]></description>
+</item>
+<item>
     <title>Fake News Classification using LSTMs</title>
     <link>https://adni03.github.io/Portfolio/fake-news-classification/</link>
     <pubDate>Sun, 04 Sep 2022 00:00:00 &#43;0000</pubDate>

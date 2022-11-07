@@ -84,7 +84,7 @@ Next, each sequence had to be padded to the maximum length of article in the new
     padded_test = pad_sequences(test_sequences,maxlen = 4405, truncating = 'post') 
 ```
 
-## 4. Building the Model
+## 5. Building the Model
 Now for the fun part!
 The model I used for this task was a `Bidirectional LSTM` with 128 units. I had to use a bidirectional model because the length of these articles are quite long and so I wanted to capture long term dependencies from the *future* and the *past*. To train the model I used the `TensorFlow` framework. An `Embedding` layer was added before the BiLSTM layer to convert the sequences into Embeddings for the model to train on. Since this is a binary classification problem, the output layer has one unit with a `sigmoid` activation. The `adam` optimizer was used and the loss function was set to `binary_crossentropy`.
 
@@ -107,7 +107,7 @@ The model I used for this task was a `Bidirectional LSTM` with 128 units. I had 
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
 ```
 
-## 5. Training and Performance
+## 6. Training and Performance
 The model was trained for 2 epochs with a validation split of 0.1 and a batch_size of 64. The trained model was then evaluated on the test set by obtaining the sigmoid outputs. If the value is greater than 0.5, classify as fake.
 
 ### Code
@@ -132,5 +132,5 @@ The model was trained for 2 epochs with a validation split of 0.1 and a batch_si
     Model Accuracy :  0.9968819599109131
 ```
 
-## 6. Results
+## 7. Results
 With a test accuracy of `99.6%`, this model does a great job at detecting if a news article is real or fake.
